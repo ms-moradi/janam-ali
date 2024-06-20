@@ -36,77 +36,29 @@
 .header{
     width:100%;
     height:100vh;
-    background: linear-gradient(0deg, #FFC796 0%, #FF6B95 100%);
-    padding: 100px  50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    color:#FFF;
-    font-family: 'shabnam';
 }
 
-.header-title{
-    font-size: xx-large;
-    margin-bottom: 30px;
-
+.slider{
+    width:100%;
+    height:100vh;
+    position: relative;
 }
 
-.header-slogan{
-    font-size: x-large;
-    margin-bottom: 10px;
-}
-
-.header-caption{
-    font-size: medium;
-}
-
-.header-images{
-    width:700px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    position:relative;
-
-}
-
-.image-one{
-    width:400px;
-    height: 400px;
-    background-color: whitesmoke;
-    border-radius: 100%;
-    border:10px solid #fff;
+.slider img{
+    width:100%;
+    height:100vh;
     position:absolute;
-    left:200px;
-    top:60px;
-    z-index:15;
+    top:0;
+    left:0;
 }
 
-.image-two{
-    width:300px;
-    height: 300px;
-    border-radius: 100%;
-    border:10px solid #fff;
-    background-color: rgb(250, 196, 196);
-    position:absolute;
-    left:0px;
-    top:100px;
-    z-index:13;
+.slider img:first-child{
+    z-index: 1;
 }
 
-
-.image-three{
-    width:300px;
-    height: 300px;
-    background-color: rgb(163, 247, 242);
-    border-radius: 100%;
-    border:10px solid #fff;
-    position:absolute;
-    left:520px;
-    top:100px;
-    z-index:11;
+.slider img:nth-child(2){
+    z-index: 0;
 }
-
-
 
 .container-main{
     background: linear-gradient(-45deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);  
@@ -277,8 +229,8 @@ a{
 .container-missions{
     width:100%;
     height:auto;
-    background-color: #686EED;
-    padding:40px 60px 60px 30px;
+    background-color: #32CFBC;
+    padding:20px 60px 60px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,7 +241,7 @@ a{
     color:#fff;
     font-size: 20px;
     font-family: 'shabnam';
-    margin-bottom: 40px;
+    margin: 20px 0px 40px 0px ;
     align-self: flex-start;
 }
 
@@ -302,7 +254,7 @@ a{
 }
 
 .mission{
-    width:203px;
+    width:210px;
     height:143px;
     border: 2px solid #fff;
     border-radius: 8px; 
@@ -313,20 +265,19 @@ a{
 }
 
 .mission-img{
-    width:199px;
+    width:209px;
     height: 139px;
     border-radius: 8px;
 }
 
 .mission-title{
-    width:180px;
+    width:200px;
     height: 30px;
     position:absolute;
+    font-family: 'shabnam';
+    font-size: 13px;
     bottom: -15px;
-    /* background-color: rgb(235, 234, 234); */
-    /* background-color: #d9dafc; */
-    background-color: #b9bbf7;
-
+    background-color: #42cfcf;
     border:2px solid #fff;
     border-radius: 20px;
     display: flex;
@@ -336,38 +287,46 @@ a{
 }
 
 .mission-details{
-    width:300px;
-    min-height: 100px;
+    width:550px;
     height: auto;
-    padding: 10px;
+    font-family: 'shabnam';
+    font-size: 16px;
+    padding:15px 20px 40px 20px;
     background-color: #fff;
     border-radius:20px;
     position: fixed;
     top:200px;
-    right:40%;
+    right:30%;
     z-index: 10;
     display: none;
     flex-direction: column;
-    justify-content: flex-start;
-    gap:10px;
+    justify-content: center;
     align-items: center;
+    gap:10px;
+}
+
+.section-mission-text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-text{
+    text-align: center;
+    padding-right: 10px;
 }
 
 .btn-close-mission{
-    width:40px;
-    height: 20px;
     font-size: 16px;
-    background-color: #32CFBC;
-    border-radius: 5px;
     border: none;
-    padding: 5px;
+    background-color: #fff;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
 }
 
 .container-clip{
-    background-color: #32CFBC;
+    background-color: #686EED;
     padding: 40px 50px ;
     display: flex;
     flex-direction: column;
@@ -379,9 +338,17 @@ a{
     color:#fff;
     font-size: 20px ;
     font-family: 'shabnam';
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     align-self: flex-start;
 }
+
+.description-clip{
+    color:#fff;
+    font-size: 16px ;
+    font-family: 'shabnam';
+    align-self: flex-start;
+    margin-bottom: 20px;
+} 
 
 .content-clip{
     width:100%;

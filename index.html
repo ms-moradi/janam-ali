@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Janam-Ali</title>
     <link rel="styleSheet" href="./style/main.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-content">
-        <h1 class="header-title">به عشق علی</h1>
-        <h3 class="header-slogan">شعار بسته</h3>
-        <p class="header-caption">توضیحات بسته</p>
-      </div>
-      <div class="header-images">
-        <div class="container-image-one">
-          <img class="image-one" />
-        </div>
-        <div class="container-image-two">
-          <img class="image-two" />
-        </div>
-        <div class="container-image-two">
-          <img class="image-three" />
-        </div>
+      <div class="slider">
+        <img
+          id="img-1"
+          src="./asset/image/firstImageSlider.jpg"
+          alt="image-1"
+        />
+        <img
+          id="img-2"
+          src="./asset/image/secondImageSlider.jpg"
+          alt="image-2"
+        />
       </div>
     </header>
     <div class="container-main">
@@ -150,103 +150,131 @@
     </div>
 
     <div class="container-missions">
-      <h3 class="title-missions">ماموریت ها</h3>
+      <h3 class="title-missions">ماموریت‌های غدیرانه</h3>
       <div class="content-missions">
         <div class="mission">
-          <img class="mission-img" src="" alt="" />
-          <section class="mission-title" onclick="missionDetailFunc()">
-            <p>نام ماموریت</p>
+          <img
+            class="mission-img"
+            src="./asset/image/firstMission.jpeg"
+            alt="mission-1"
+          />
+          <section class="mission-title" onclick="missionDetailFunc(event)">
+            <p id="1">تزئین و آماده‌سازی خانه برای جشن</p>
           </section>
 
           <div class="mission-details">
-            توضیح ماموریت
-
             <button
               type="button"
               class="btn-close-mission"
               onclick="closeMissionDetailFunc()"
             >
-              بستن
+              <i class="fa fa-close" style="font-size: 16px"></i>
             </button>
+            <section class="section-mission-text">
+              <p class="mission-text"></p>
+            </section>
           </div>
         </div>
         <div class="mission">
-          <img class="mission-img" src="" alt="" />
-          <section class="mission-title" onclick="missionDetailFunc()">
-            <p>نام ماموریت</p>
+          <img
+            class="mission-img"
+            src="./asset/image/secondMission.jpeg"
+            alt="mission-2"
+          />
+          <section class="mission-title" onclick="missionDetailFunc(event)">
+            <p id="2">پخت و تزئین پذیرایی جشن</p>
           </section>
 
           <div class="mission-details">
-            توضیح ماموریت
-
             <button
               type="button"
               class="btn-close-mission"
               onclick="closeMissionDetailFunc()"
             >
-              بستن
+              <i class="fa fa-close" style="font-size: 16px"></i>
             </button>
+            <section class="section-mission-text">
+              <p class="mission-text"></p>
+            </section>
           </div>
         </div>
         <div class="mission">
-          <img class="mission-img" src="" alt="" />
-          <section class="mission-title" onclick="missionDetailFunc()">
-            <p>نام ماموریت</p>
+          <img
+            class="mission-img"
+            src="./asset/image/thirdMission.jpeg"
+            alt="mission-3"
+          />
+          <section class="mission-title" onclick="missionDetailFunc(event)">
+            <p id="3">هدیه دادن به دوستان و آشنایان</p>
           </section>
 
           <div class="mission-details">
-            توضیح ماموریت
-
             <button
               type="button"
               class="btn-close-mission"
               onclick="closeMissionDetailFunc()"
             >
-              بستن
+              <i class="fa fa-close" style="font-size: 16px"></i>
             </button>
+            <section class="section-mission-text">
+              <p class="mission-text"></p>
+            </section>
           </div>
         </div>
         <div class="mission">
-          <img class="mission-img" src="" alt="" />
-          <section class="mission-title" onclick="missionDetailFunc()">
-            <p>نام ماموریت</p>
+          <img
+            class="mission-img"
+            src="./asset/image/fourthMission.jpeg"
+            alt="mission-4"
+          />
+          <section class="mission-title" onclick="missionDetailFunc(event)">
+            <p id="4">تبریک عید به بزرگ‌تر‌ها</p>
           </section>
 
           <div class="mission-details">
-            توضیح ماموریت
-
             <button
               type="button"
               class="btn-close-mission"
               onclick="closeMissionDetailFunc()"
             >
-              بستن
+              <i class="fa fa-close" style="font-size: 16px"></i>
             </button>
+            <section class="section-mission-text">
+              <p class="mission-text"></p>
+            </section>
           </div>
         </div>
         <div class="mission">
-          <img class="mission-img" src="" alt="" />
-          <section class="mission-title" onclick="missionDetailFunc()">
-            <p>نام ماموریت</p>
+          <img
+            class="mission-img"
+            src="./asset/image/fifthMission.jpeg"
+            alt="mission-5"
+          />
+          <section class="mission-title" onclick="missionDetailFunc(event)">
+            <p id="5">اجرای سرود و مولودی</p>
           </section>
 
           <div class="mission-details">
-            توضیح ماموریت
-
             <button
               type="button"
               class="btn-close-mission"
               onclick="closeMissionDetailFunc()"
             >
-              بستن
+              <i class="fa fa-close" style="font-size: 16px"></i>
             </button>
+            <section class="section-mission-text">
+              <p class="mission-text"></p>
+            </section>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container-clip">
-      <h3 class="title-clip">به عشق علی علیه السلام</h3>
+      <h3 class="title-clip">پویش به عشق علی علیه السلام</h3>
+      <p class="description-clip">
+        از انجام ماموریت‌ها برای ما عکس و ویدئو ارسال کنید:
+      </p>
       <div class="content-clip">
         <div class="clip"></div>
         <div class="clip"></div>
